@@ -16,7 +16,7 @@ let discount40 = totPrizeF * 40 / 100;
 
 let element = document.getElementById("my-id");
 
-
+let element2 = document.getElementById("my-id2");
 
 
 
@@ -28,6 +28,9 @@ if (age <= 17) {
 } else {
     element.innerHTML = `Il prezzo del biglietto é ${totPrizeF} euro`
 }
+
+
+
 
 
 
