@@ -6,7 +6,12 @@ let kilo = prompt("quanti kilometri percorrerai?");
 
 let totPrize = prize * kilo;
 
-let totPrizeF = Math.round(totPrize);
+// let totPrizeF = Math.round(totPrize);
+// var totPrizeF = Math.round((totPrize + Number.EPSILON) * 200) / 100;
+
+var totPrizeF = totPrize.toFixed(2);
+
+
 
 let discount20 = totPrizeF * 20 / 100;
 let discount40 = totPrizeF * 40 / 100;
