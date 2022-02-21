@@ -13,21 +13,22 @@ let discount40 = totPrizeF * 40 / 100;
 
 
 
-
 let element = document.getElementById("my-id");
 
-let element2 = document.getElementById("my-id2");
 
 
 
 
-if (age <= 17) {
+if (kilo == 0) {
+    element.innerHTML= `impossibile calcolare un prezzo`
+} else if (age <= 17) {
     element.innerHTML= `Il prezzo del biglietto é ${totPrizeF - discount20} euro`
 } else if (age >= 68) {
     element.innerHTML = `Il prezzo del biglietto é ${totPrizeF - discount40} euro`
 } else {
     element.innerHTML = `Il prezzo del biglietto é ${totPrizeF} euro`
 }
+
 
 
 
